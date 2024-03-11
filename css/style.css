@@ -1,8 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&display=swap');
+/*Reset*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+li {
+    list-style: none;
+
+}
+:root{
+    --blue: #00008b;
+    --Gray: #555555;
+    --SkyBlue:#00bfff;
+    --silver:#c0c0c0;
+    --red: #ff0000;
+    --white: #ffffff;
+    --Darkgray: #959595;
 }
 
 .red{
@@ -18,9 +32,9 @@
     
 }
 .main-nav{
-    width: 100%;
-    max-width: 600px;
-    padding: 0 16px;
+    width: 100%; /*cupar toda area disponivel*/
+    max-width: 600px; /*travar a largura maxima em definir para objetos*/
+    padding: 0 16px; /*primeiro é cima e baixo, segundo é esquerda e direita*/
 }
 .header-list-container {
     display: flex;
@@ -30,7 +44,6 @@
 
 }
 .nav-item {
-    list-style-type: none;
     text-transform: uppercase;
     color: red;
 }
@@ -39,11 +52,11 @@ hr {
 }
 .nav-item a {
     text-decoration: none;
-    color: inherit;
+    color: #00008b;
 }
 .nav-item:hover {
     color: rgba(0,0,139, 0.7);
-    transition: 0.2s;
+    transition: 0.2s; /*Atrasar o tempo que a cor muda*/
 }
 .main-about {
     padding: 40px 0 64px;
@@ -54,7 +67,7 @@ hr {
     margin: 0 auto; /*nao aplica cima/baixo, o auto distribui o maximo possivel para esquerda*/
 }
 .about-title {
-    font-family:"Raleway", sans-serif ;
+    font-family:"Raleway", sans-serif ; /*Pega a fonte inportada, caso não encontre ultiliza a sans-serif (padrão)*/
     font-size: 32px;/*tamanho da Fonte*/
     text-align: center;
     text-transform: uppercase;
@@ -65,4 +78,40 @@ hr {
     margin: 0 20px 10px 0; /*0 topo, 20 direita ,10 baixo 0 esquerda*/
     width: 200px;/*largura*/
     height: auto;/*evita a distorçao das imagens*/
+}
+.about-description {
+    color:var(--Gray) ; /*Utiliza variavel de cor criado anteriomente*/
+    text-align: justify; /*Justifica o texto*/
+}
+
+/*Footer*/
+.main-footer {
+    background-color: var(--SkyBlue);/*aplicar cor no fundo do rodape*/
+    padding: 15px 0;
+}
+.main-footer-container {
+    display: flex; /*deixa tudo na mesma linha*/
+    align-items: center; /*Alinha todos os elementos*/
+    justify-content: space-between; /*Colar nome de um lado e lista de iconesdo outro*/
+}
+
+.title-smaller {
+    font-family: "Raleway", sans-serif; /*pegar a fonte inportada*/
+    color: var(--blue); /**/
+    font-size: 26px; /**/
+}
+.list-container {
+    display: flex; /*Deixa o elementos na mesma limha*/
+    align-items: center; /*Alinha todos os elementos*/
+    justify-content: space-between; /*Colocar o nome de um lado e os icones*/
+
+}
+.footer-item {
+    width: 50px; /**/
+    height: 50px; /**/
+    padding: 15px 0; /*Aplica espaçamento 15px cima/baixo e 0px esquerda/direita*/
+}
+.footer-item + .footer-item {
+    margin-left: 16px; /*Aplica na mesma class seguindo em diante, ate chegar no fim*/
+
 }
