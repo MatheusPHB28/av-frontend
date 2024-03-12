@@ -5,8 +5,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*Dar a fonte a todos os body, com peso regular 400 e tamanho 22px,
+caso nao ache a fonte inportada vai usar a secundaria*/
+body {
+    font: 400 22px "Roboto", sans-serif;
+}
 li {
-    list-style: none;
+    list-style: none; /*Retira as bolinhas dos  elementos*/
 
 }
 :root{
@@ -66,7 +71,7 @@ hr {
     padding: 0 16px;
     margin: 0 auto; /*nao aplica cima/baixo, o auto distribui o maximo possivel para esquerda*/
 }
-.about-title {
+.title-median {
     font-family:"Raleway", sans-serif ; /*Pega a fonte inportada, caso não encontre ultiliza a sans-serif (padrão)*/
     font-size: 32px;/*tamanho da Fonte*/
     text-align: center;
@@ -89,7 +94,7 @@ hr {
     background-color: var(--SkyBlue);/*aplicar cor no fundo do rodape*/
     padding: 15px 0;
 }
-.main-footer-container {
+.footer-container {
     display: flex; /*deixa tudo na mesma linha*/
     align-items: center; /*Alinha todos os elementos*/
     justify-content: space-between; /*Colar nome de um lado e lista de iconesdo outro*/
@@ -100,12 +105,8 @@ hr {
     color: var(--blue); /**/
     font-size: 26px; /**/
 }
-.list-container {
-    display: flex; /*Deixa o elementos na mesma limha*/
-    align-items: center; /*Alinha todos os elementos*/
-    justify-content: space-between; /*Colocar o nome de um lado e os icones*/
 
-}
+
 .footer-item {
     width: 50px; /**/
     height: 50px; /**/
@@ -114,4 +115,63 @@ hr {
 .footer-item + .footer-item {
     margin-left: 16px; /*Aplica na mesma class seguindo em diante, ate chegar no fim*/
 
+}
+.contact-text{
+    text-align: center; /*centralizar o texto*/
+    margin-bottom: 30px; /*Separar o paragrafo do formulário*/
+    font-size: 28px;
+    color: var(--Gray);
+
+}
+.contact {
+    background-color: var(--SkyBlue); /*Cor do fundo do formulario*/
+    padding: 30px; /*Espaçamento*/
+    max-width: 600px; /*Tamanho definido para o projeto*/
+    margin-left: auto; /*empurrar para esquerda*/
+    margin-right: auto; /*empurrar para direita*/
+    margin-bottom: 20px; /*espaçamento para baixo*/
+
+}
+.contact-label {
+    display: block; /*coloca o elementos um emcima do outro*/
+    margin-bottom: 20px; /*espaçamento para baixo*/
+    color: var(--blue);
+
+}
+.contact-field {
+    display: block; /*colocar elemento um em cima do outro*/
+    width: 100%; /**/
+    height: 30px; /**/
+    font-size: 16px; /**/
+    padding-left: 10px; /**/
+    border: none; /**/
+}
+.contact-field:focus { /**/
+    background-color: var(--silver);/*cor do fundo*/
+    outline: none;/*Remove a linha interna do campo do formulario*/
+}
+textarea.contact-field {
+    height: 150px;
+    padding: 10px;
+    font-family: "Roboto", Calibri;
+
+}
+.button-form {
+    background-color: var(--blue); /*cor do fundo do botão*/
+    color: var(--white); /*cor da fonte do botão*/
+    border: 2px solid var(--blue); /*adciona borda ao botão*/
+    border-radius: 10px; /**/
+    padding: 2px 6px; /*aumenta o botao 2 para cima/baixo e 6 para direita/esquerda*/
+    font-weight: bold; /**/
+    cursor: pointer;
+}
+.button-form:hover {
+    background-color: var(--white);
+    color: var(--blue); /*cor da fonte do botão*/
+}
+.contact-maps {
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 20px;
 }
