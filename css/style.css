@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto&family=Rock+Salt&display=swap');
 /*Reset*/
 *{
     margin: 0;
@@ -8,7 +8,7 @@
 /*Dar a fonte a todos os body, com peso regular 400 e tamanho 22px,
 caso nao ache a fonte inportada vai usar a secundaria*/
 body {
-    font: 400 22px "Roboto", sans-serif;
+    font: 400 18px "Roboto", sans-serif;
 }
 li {
     list-style: none; /*Retira as bolinhas dos  elementos*/
@@ -24,10 +24,6 @@ li {
     --Darkgray: #959595;
 }
 
-.red{
-    color: red;
-    font-family: "Rock Salt", cursive;
-}
 .main-header{
     background-image: url(background-image.png);
     background-position: 50% 39%;
@@ -36,7 +32,7 @@ li {
     align-items: center;
     
 }
-.main-nav{
+.main-nav-container {
     width: 100%; /*cupar toda area disponivel*/
     max-width: 600px; /*travar a largura maxima em definir para objetos*/
     padding: 0 16px; /*primeiro é cima e baixo, segundo é esquerda e direita*/
@@ -106,16 +102,18 @@ hr {
     font-size: 26px; /**/
 }
 
-
 .footer-item {
     width: 50px; /**/
     height: 50px; /**/
     padding: 15px 0; /*Aplica espaçamento 15px cima/baixo e 0px esquerda/direita*/
 }
+
 .footer-item + .footer-item {
     margin-left: 16px; /*Aplica na mesma class seguindo em diante, ate chegar no fim*/
 
 }
+
+
 .contact-text{
     text-align: center; /*centralizar o texto*/
     margin-bottom: 30px; /*Separar o paragrafo do formulário*/
@@ -175,3 +173,87 @@ textarea.contact-field {
     margin-left: auto;
     padding-bottom: 20px;
 }
+
+/*index*/
+
+.title-header {
+    font-family:Modimi One;
+    color: var(--blue);
+    font-size: 38px;
+    padding-bottom: 10px;
+}
+
+.title-large {
+    font-family: "Rock Salt", cursiv;
+    font-size: 38px;
+    color: var(--blue);
+    text-align: center;
+}
+
+.description {
+    text-align: center;
+    color: var(--Gray);
+    padding-bottom: 10px;
+}
+
+.emphasis {
+    background-color: var(--SkyBlue);
+    color: var(--blue);
+    border-radius: 25px;
+    text-align: center;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    padding-bottom: 30px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-title {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.product-image {
+    width: 320px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.product-price-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-price {
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.button-hover {
+    background-color: var(--SkyBlue);
+    color: var(--blue);
+    border: 2px solid var(--SkyBlue);
+    border-radius: 10px;
+    padding: 4px 2px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.button-hover:hover {
+    background-color: transparent;
+    color: var(--SkyBlue);
+    border:  2px solid var(--blue);
+}
+
+
