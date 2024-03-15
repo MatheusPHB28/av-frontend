@@ -7,7 +7,7 @@
 }
 /*Dar a fonte a todos os body, com peso regular 400 e tamanho 22px,
 caso nao ache a fonte inportada vai usar a secundaria*/
-body {
+body,button,input {
     font: 400 18px "Roboto", sans-serif;
 }
 li {
@@ -254,6 +254,17 @@ textarea.contact-field {
     background-color: transparent;
     color: var(--SkyBlue);
     border:  2px solid var(--blue);
+}
+.cart-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+    
+.table-head-item {
+    text-align: start;
+    border-bottom: 1px solid var(--Darkgray);
+    padding-bottom: 6px;
+    text-transform: uppercase;/*Transformar o texto em maiuscula*/
 }
 
 
