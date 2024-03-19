@@ -241,6 +241,7 @@ textarea.contact-field {
     font-weight: bold;
 
 }
+
 .button-hover {
     background-color: var(--SkyBlue);
     color: var(--blue);
@@ -250,11 +251,13 @@ textarea.contact-field {
     font-weight: bold;
     cursor: pointer;
 }
+
 .button-hover:hover {
     background-color: transparent;
     color: var(--SkyBlue);
     border:  2px solid var(--blue);
 }
+
 .cart-table{
     width: 100%;
     border-collapse: collapse;
@@ -266,5 +269,78 @@ textarea.contact-field {
     padding-bottom: 6px;
     text-transform: uppercase;/*Transformar o texto em maiuscula*/
 }
+
+.second-col,
+.third-col {
+    width: 25%;
+}
+
+.cart-product {
+    padding: 8px;
+}
+
+.product-identification {
+    display: flex;
+    align-items: center;
+}
+
+.cart-product-image {
+    width: 120px;
+    height: 80px;
+}
+
+.cart-product-title {
+    margin-left: 15px;
+}
+.cart-product-price {
+    font-family: "Raleway", sans-serif;
+}
+
+.product-qnt-input {
+    width: 45px;
+    height: 35px;
+    border: 2px solid var(--Gray);
+    border-radius: 5px;
+    background-color: var(--silver);
+    text-align: center;
+}
+
+.remove-product-button {
+    background-color: var(--red);
+    color: var(--white);
+    border: 0;
+    border-radius: 5px;
+    padding: 4px;
+    margin-left: 5px;
+}
+
+.remove-product-button:hover {
+    filter: brightness(0.8);
+}
+.cart-total-container {
+    border-top: 1px solid var(--Darkgray);
+    text-align: end;
+    padding: 6px 16px 0 0;
+}
+.cart-total-container strong {
+    margin-right: 10px;
+}
+
+.purchase-button {
+    display: flex;
+    padding: 16px 20px;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 6px;
+    text-transform: uppercase;
+    border: 0;
+    font-weight: bold;
+    margin: 24px auto 0;
+
+}
+.purchase-button:hover {
+    filter: brightness(0.8);
+}
+
 
 
