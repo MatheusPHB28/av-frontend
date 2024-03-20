@@ -90,7 +90,7 @@ hr {
     background-color: var(--SkyBlue);/*aplicar cor no fundo do rodape*/
     padding: 15px 0;
 }
-.footer-container {
+.main-footer-container {
     display: flex; /*deixa tudo na mesma linha*/
     align-items: center; /*Alinha todos os elementos*/
     justify-content: space-between; /*Colar nome de um lado e lista de iconesdo outro*/
@@ -100,6 +100,12 @@ hr {
     font-family: "Raleway", sans-serif; /*pegar a fonte inportada*/
     color: var(--blue); /**/
     font-size: 26px; /**/
+}
+.list-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
 
 .footer-item {
@@ -342,5 +348,11 @@ textarea.contact-field {
     filter: brightness(0.8);
 }
 
+/*responsivilidade*/
+@media (max-width: 725px) {
+.list-container (
+flex-direction:column;
+)
+}
 
 
