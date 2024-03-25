@@ -200,6 +200,7 @@ textarea.contact-field {
     text-align: center;
     color: var(--Gray);
     padding-bottom: 10px;
+    font-family:"Raleway", sans-serif;
 }
 
 .emphasis {
@@ -309,6 +310,7 @@ textarea.contact-field {
     border-radius: 5px;
     background-color: var(--silver);
     text-align: center;
+    display: flex;
 }
 
 .remove-product-button {
@@ -349,84 +351,74 @@ textarea.contact-field {
 }
 
 /*responsivilidade*/
-@media (max-width:825px) {
+
+
+@media (max-width: 825px) {
     .title-header {
         font-size: 34px;
     }
+} 
+
+@media (max-width: 793px) {
+    .main-footer-container{
+    flex-direction: column;
+    }
+    .title-median {
+        font-size: 30px;
+        padding: 4px;
+    }
 }
 
-@media (max-width: 725px) {
-.main-footer-container {
-flex-direction:column;
-}
-.title-median {
-    font-size: 30px;
-}
-.product-container {
-    width: 320px;
-}
-.cart-product-title {
-    margin-left: 0;
-}
-.title-header {
-font-family:"Madimi One", cursive;
-color: var(--blue);
-text-align: center;
-}
-.title-large {
-    font-family: "Rock Salt", cursive;
-    font-size: 28px;
-    color: var(--blue);
-    text-align: center;
-}
-.logo {
-    width: 85px;
-    height: 90px;
-}
-
-}
-
-@media (max-width:680px) {
+@media (max-width: 680px) {
     .product-container {
-    justify-content: center;
-}
-.title-median {
-    font-size: 27px;
-    padding: 4px;
-}
-
+        justify-content: center;
+    }
+    .title-large{
+        font-size: 27px;
+    }
 }
 
-@media (max-width:600px ) {
+@media (max-width: 600px) {
     .title-large {
+        font-size: 36px;
+    }
+    .title-median {
         font-size: 24px;
     }
-
 }
-@media (max-width:500px) {
-    .title-header {
+
+@media (max-width: 590px) {
+    .product-identification {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 560px) {
+    .title-large {
+        font-size: 32px;
+    }
+    .title-median {
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 500px) {
+    .title-header{
         font-size: 30px;
     }
-
     .title-large {
         font-size: 26px;
     }
-
     .title-median {
         font-size: 18px;
     }
-
     .title-smaller {
         font-size: 22px;
     }
 }
-@media(max-width:400px){
-    .title-header {
-        font-size: 30px;
-    }
-}
-@media (max-width: 405px){
-    .nav-item img {
+
+@media (max-width: 405px) {
+    .nav-item img{
         width: 80px;
         height: 80px;
     }
@@ -450,14 +442,10 @@ text-align: center;
     }
     .product-image {
         width: 315px;
-
-    }
-    .description {
-        font-size: 19px;
-
     }
 }
-@media (max-width:375) {
+
+@media (max-width: 375px) {
     .about-image {
         width: 160px;
     }
@@ -465,4 +453,3 @@ text-align: center;
         font-size: 25px;
     }
 }
-
