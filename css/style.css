@@ -59,6 +59,28 @@ hr {
     color: rgba(0,0,139, 0.7);
     transition: 0.2s; /*Atrasar o tempo que a cor muda*/
 }
+.sub-itens {
+    display: none;
+    position: fixed;
+}
+nav.nav-item:hover .sub-itens {
+    display: block;
+}
+.sub-itens li {
+    margin-bottom: 5px;
+}
+.sub-itens a {
+    color: var(--blue);
+    text-decoration: none;
+}
+.sub-itens a:hover {
+    text-decoration: none;
+    background-color: black;
+    border-radius: 5px;
+    padding: 0px 3px;
+    color: var(--blue);
+}
+
 .main-about {
     padding: 40px 0 64px;
 }
@@ -227,6 +249,11 @@ textarea.contact-field {
 .product-title {
     font-size: 20px;
     margin-bottom: 6px;
+}
+.product-box{
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-shadow: 3px 3px 5px 5px;
 }
 
 .product-image {
